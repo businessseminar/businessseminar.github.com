@@ -19,11 +19,16 @@
 	word-spacing: 20px;
 	margin: 0;
 	padding: 0;
+	padding-left: 8px;
 	white-space: nowrap;
-	font-size: 20px;
+	font-size: 16px;
 }
 #header ul li {
 	display: inline;
+}
+#header img{
+	height: 185px;
+	width: 185px;
 }
 a {
 	text-decoration: none;
@@ -38,8 +43,8 @@ a:active {color:#172822;}
 	position:absolute;
 }
 #headright{
-margin-left: 200px;
-margin-top:
+margin-left: 220px;
+margin-top: 10px;
 }
 /* ============== FOOTER ===========================*/
 .footerskin {
@@ -97,7 +102,7 @@ margin-top:
 #maincontent h3 {
 	font-size: 24px;
 	font-style: italic;
-	color: rgb(127, 204, 255);
+	color: #172822;
 	font-weight: normal;
 }
 #maincontent p {
@@ -261,7 +266,10 @@ float: left;
 .pleft{ 
 	padding-left: 30px;
 }
-
+.brandonseminar{
+	height:125px;
+	width:135px;
+}
 /* ============== NULLIFY =======================*/
 
 html, body, div {
