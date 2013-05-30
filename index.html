@@ -2,6 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link type="text/css" rel="stylesheet" href="mainstyles.css"/>
+<link type="text/css" rel="stylesheet" href="sliderstyle.css"/>
+<script src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="widget/lib/jquery.ui.core.js"></script>
+<script type="text/javascript" src="widget/lib/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="widget/lib/jquery.ui.rcarousel.js"></script>
+<script type="text/javascript" src="sliding.js"></script>
 <title>FS Weekly Business Support</title>
 </head>
 
@@ -25,8 +31,21 @@
   <!-- Hardest Part is here -->
   <div id="content1wrapper" class="wrapper contentskin1">
     <div id="content1content" class="maincontentcontent">
-      <div id"c1cleft" class="col-1-2"> Add Video here </div>
-      <div id"c1cright" class="col-1-2"> <span id="homemore">MORE<br />
+      <div id"c1cleft" class="col-2-3">
+        <div id="container">
+          <div id="carousel">
+            <div id="slide01" class="slide"> 
+<iframe width="425" height="350" src="http://www.youtube.com/embed/yZRbAnnyseQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div id="slide02" class="slide">
+              <iframe width="425" height="350" src="http://www.youtube.com/embed/bAYZ-lA7Rr0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <a href="#" id="ui-carousel-next"><span>next</span></a> <a href="#" id="ui-carousel-prev"><span>prev</span></a> 
+          <!--<div id="pages"></div>--> 
+        </div>
+      </div>
+      <div id"c1cright" class="col-1-3"> <span id="homemore">MORE<br />
         SEMINARS<br  />
         HERE</span><br />
         <form action="seminars.html">
@@ -34,71 +53,74 @@
         </form>
       </div>
     </div>
-    <div id="content2wrapper" class="wrapper contentskin2">
-      <div id="content2content" class="maincontentcontent">
-        <div id="c2cleft" class="col-1-2">
-          <h2>What are Weekly Business Seminars?</h2>
-          <p> Weekly seminars in business are invitation-only 
-            gatherings on Friday at the end of the workday (5:30pm).
-            Business seminars are part of a learning curriculum 
-            sponsored by Freshman Support, designed to empower 
-            our team with critical business training. </p>
-          <p> Guest speakers are predominately drawn from the Austin 
-            start-up business community, which offer opportunities 
-            to network and build critical relationships. Seminars 
-            include lectures in law, tech, media, accounting, viral 
-            marketing, boot strapping, business development and 
-            career planning - to name a few. </p>
-        </div>
-        <div id="c2cright" class="col-1-2">
-          <h2>Our Thinking</h2>
-          <p> "We believe in empowering students with business 
-            knowledge ranging from rudimentary skills to expansive 
-            market perspective. It's something we wish we had as 
-            undergraduates." -Brandon Chicotsky, CMO </p>
-        </div>
+  </div>
+  <div id="content2wrapper" class="wrapper contentskin2">
+    <div id="content2content" class="maincontentcontent">
+      <div id="c2cleft" class="col-1-2">
+        <h2>What are Weekly Business Seminars?</h2>
+        <p> Weekly seminars in business are invitation-only 
+          gatherings on Friday at the end of the workday (5:30pm).
+          Business seminars are part of a learning curriculum 
+          sponsored by Freshman Support, designed to empower 
+          our team with critical business training. </p>
+        <p> Guest speakers are predominately drawn from the Austin 
+          start-up business community, which offer opportunities 
+          to network and build critical relationships. Seminars 
+          include lectures in law, tech, media, accounting, viral 
+          marketing, boot strapping, business development and 
+          career planning - to name a few. </p>
       </div>
-    </div>
-    <div id="content3wrapper" class="wrapper contentskin1">
-      <div id="content3content" class="maincontentcontent">
-        <div id="c3cleft" class="col-1-3"> <img src="images/market.png" />
-          <h2>Market Perspective</h2>
-          <p> Gain insight from professionals in the Austin startup 
-            community who have received funding or bootstrapped their 
-            endeavors to a cash-positive standing. What they teach 
-            can help you identify opportunity, just as they did before 
-            they launched their businesses. </p>
-        </div>
-        <div id="c3cmid" class="col-1-3"> <img src="images/social.png" />
-          <h2>Social Marketing</h2>
-          <p> Whether learning search engine optimization (SEO) or 
-            customer relationship management (CRM) software, there 
-            are critical tools we'll show you that may enable your 
-            career and expand your core competency online. </p>
-        </div>
-        <div id="c3cright" class="col-1-3"> <img src="images/career.png" />
-          <h2>Career Planning</h2>
-          <p> Career planning is essential, and if you're a 
-         	college student it's important to start right 
-            away. We'll offer critical tips and helpful 
-            tools that led former interns to employment, 
-            as well as prescriptive methods for landing jobs, 
-            or creating your own, so you're set up with viable 
-            options after college. </p>
-        </div>
+      <div id="c2cright" class="col-1-2">
+        <h2>Our Thinking</h2>
+        <p> "We believe in empowering students with business 
+          knowledge ranging from rudimentary skills to expansive 
+          market perspective. It's something we wish we had as 
+          undergraduates." -Brandon Chicotsky, CMO </p>
       </div>
     </div>
   </div>
+  <div id="content3wrapper" class="wrapper contentskin1">
+    <div id="content3content" class="maincontentcontent">
+      <div id="c3cleft" class="col-1-3"> <img src="images/market.png" />
+        <h2>Market Perspective</h2>
+        <p> Gain insight from professionals in the Austin startup 
+          community who have received funding or bootstrapped their 
+          endeavors to a cash-positive standing. What they teach 
+          can help you identify opportunity, just as they did before 
+          they launched their businesses. </p>
+      </div>
+      <div id="c3cmid" class="col-1-3"> <img src="images/social.png" />
+        <h2>Social Marketing</h2>
+        <p> Whether learning search engine optimization (SEO) or 
+          customer relationship management (CRM) software, there 
+          are critical tools we'll show you that may enable your 
+          career and expand your core competency online. </p>
+      </div>
+      <div id="c3cright" class="col-1-3"> <img src="images/career.png" />
+        <h2>Career Planning</h2>
+        <p> Career planning is essential, and if you're a 
+          college student it's important to start right 
+          away. We'll offer critical tips and helpful 
+          tools that led former interns to employment, 
+          as well as prescriptive methods for landing jobs, 
+          or creating your own, so you're set up with viable 
+          options after college. </p>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 <div id="footer" class="wrapper footerskin">
   <div id="footercontent" class="grid">
     <div class="col-1-3">
       <h2>Location</h2>
-      <iframe width="278" height="126" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=3309+Hollywood+Ave.+Austin,+TX+78722&amp;aq=&amp;sll=30.307761,-97.753401&amp;sspn=0.81806,1.588898&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=3309+Hollywood+Ave,+Austin,+Travis,+Texas+78722&amp;ll=30.291608,-97.719097&amp;spn=0.009338,0.023947&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small>
+      <iframe width="278" height="126" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=3309+Hollywood+Ave.+Austin,+TX+78722&amp;aq=&amp;sll=30.307761,-97.753401&amp;sspn=0.81806,1.588898&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=3309+Hollywood+Ave,+Austin,+Travis,+Texas+78722&amp;ll=30.291608,-97.719097&amp;spn=0.009338,0.023947&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+      <br />
+      <small>
       <p> 3309 Hollywood Ave.<br />
         Austin, TX 78722 </p>
     </div>
-    <div class="col-1-3">
+    <div class="col-1-3 pleft">
       <h2>Contact</h2>
       <h3>Kristen Carson</h3>
       <p> President and CEO<br />
