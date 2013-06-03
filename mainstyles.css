@@ -124,7 +124,7 @@ display: inline-block;
 
 /* ============== CLASSESS ========================*/
 
-.wrapper {
+.wrapp {
 	width: 100%;
 	margin: 0 auto;
 	text-align: left;
@@ -132,6 +132,9 @@ display: inline-block;
 .nomargpad {
 	margin: 0;
 	padding: 0;
+}
+.center{
+margin: 0 auto;
 }
 
 /* ============== COLUMN CLASS ===================*/
@@ -205,7 +208,7 @@ float: left;
 	color: rgb(74, 74, 74);
 }
 #form2 input, #form2 textarea {
-	width: 272px;
+	width: 430px;
 	border: 1px solid rgb(113, 112, 112);
 	border-radius: 5px 5px 5px 5px;
 	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.6);
@@ -214,7 +217,7 @@ float: left;
 	color: #fff;
 }
 #form2 textarea {
-	height: 125px;
+	height: 250px;
 	overflow: auto;
 }
 #form2 p.submit {
@@ -229,6 +232,7 @@ float: left;
 	color: #fff;
 	cursor: pointer;
 	text-align: center;
+	margin-left: 18px;
 }
 #form2 ul {
 	list-style-type: none;
