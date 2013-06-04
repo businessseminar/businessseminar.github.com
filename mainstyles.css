@@ -136,6 +136,10 @@ display: inline-block;
 .center{
 margin: 0 auto;
 }
+.textCenter{
+text-align: center;
+/* David implemented this*/
+}
 
 /* ============== COLUMN CLASS ===================*/
 
