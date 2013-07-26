@@ -140,7 +140,18 @@ margin: 0 auto;
 text-align: center;
 /* David implemented this*/
 }
-
+.videoContainer{
+	width: 450px;
+	height: 300px;
+	position: relative;
+	background: rgb(230, 230, 230);
+	border-color: rgb(190,190,190);
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 30px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
 /* ============== COLUMN CLASS ===================*/
 
 /* Select all of the column*/
